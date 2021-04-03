@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Home</title>
+
+	<!--Google fonts-->
+	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Sarina&display=swap" rel="stylesheet">
+
+	<!--Stylesheet-->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body class="index-bkg">
+	
+	<!--Logo-->
+	<div class="index-circle">
+		<h1 class="index-logo">Together<h1>
+	</div>
+	
+	
+	<!--3D links-->
+		<table class="container">
+			<tr>
+				<td>
+					<a href="community.html">
+						<div class="box">
+							<h2 class="name">Community</h2>
+							<img src="community.jpg" class="product">
+						</div>
+					</a>
+				</td>
+				<td>
+					<a href="belonging.html">
+						<div class="box">
+							<h2 class="name">Belonging</h2>
+							<img src="belonging.png" class="product">
+						</div>
+					</a>
+				</td>
+				<td>
+					<a href="contact.html">
+						<div class="box">
+							<h2 class="name">Contact</h2>
+							<img src="bubble.png" class="product">
+						</div>
+					</a>
+				</td>
+			</tr>
+		</table>
+
+
+	<!--JavaScript to animate the links-->
+	<script src="vanilla-tilt.min.js"></script>
+	<script type="text/javascript">
+		VanillaTilt.init(document.querySelectorAll(".box"), {
+		max: 25,
+		speed: 400
+	});
+	</script>
+	</div>
+</body>
+</html>
